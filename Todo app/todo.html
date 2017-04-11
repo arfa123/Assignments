@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+            <h1>Todo App</h1>
+            <div class="main">
+                <input type="text" name="todo" id="input" autofocus/>
+                <button onclick="addTodo()">Add Todo</button>
+            </div>
+            <div class="box">
+                <h3 id="heading"></h3>
+                <ol id="todo_list">
+                </ol>
+                <div class="remove">
+                    <button onclick="all_remove()">Remove All</button>
+                </div>
+            </div>
+            <script src = "todo.js"></script>
+</body>
+</html>

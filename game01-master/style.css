@@ -1,0 +1,158 @@
+body {
+    background-color: darkkhaki;
+    margin: 0;
+}
+
+.container {
+    width: 560px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.js{
+        font-size: 22px;
+    color: crimson;
+}
+
+h1 {
+        text-align: center;
+    font-size: 36px;
+    color: black;
+    font-family: cursive;
+}
+h4 {
+        text-align: center;
+    font-size: 19px;
+    color:#223477;
+}
+.numbers {
+    width: 100%;
+    background: white;
+}
+.left-numbers {
+    padding-left: 20px;
+    float: left;
+    color: blue;
+}
+
+.right-numbers {
+    padding-right: 20px;
+    float: right;
+}
+.left-numbers2 {
+    padding-left: 20px;
+    float: left;
+}
+
+.right-numbers2 {
+    padding-right: 20px;
+    float: right;
+}
+
+
+/*.random-num{
+    border-radius: 50%;
+    background: #f6b523;
+
+}*/
+
+.bricks ul {
+    margin: 0;
+    padding: 0;
+}
+
+.bricks ul li {
+    list-style: none;
+    height: 128px;
+    width: 130px;
+    float: left;
+    padding: 0;
+    margin: 4px;
+    background-image: url(./br.jpg);
+    border: 1px solid burlywood;
+    cursor: pointer;
+}
+
+
+.bricks ul li:active {
+    background: transparent;
+}
+
+.clear {
+    clear: both;
+}
+img{
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+#loss{
+font-size: 20px;
+    background-color: rgba(189, 27, 15, 0.91);;
+    color: white;
+    font-weight: bolder;
+    width: 37%;
+    text-align: center;
+}
+#win{
+font-size: 20px;
+    background-color: rgba(66, 138, 69, 0.95);
+    color: white;
+    font-weight: bolder;
+    width: 37%;
+    text-align: center;
+}
+.play{
+    width: 100%;
+    background-color: white;
+}
+a{
+    color: wheat;
+    font-family: sans-serif;
+    text-decoration: underline;;
+    cursor: pointer;
+}
+#mh{
+color: brown;
+    text-decoration: underline;
+    font-family: fantasy;
+}
+
+/*For Mobile*/
+@media only screen and (max-width: 425px) {
+    .container{
+        width: 100%;
+        height: 100%;
+        font-size: x-small;
+    }
+    .bricks ul li {
+    height: 77px;
+    width: 21.5%;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 10px;
+    }
+    #win{
+        width: 50%;
+        margin: 0 auto;
+    }
+    #loss{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .footer{
+        font-size: 10px;
+    }
+}
+
+/*For Tablet*/
+@media only screen and (min-width: 768px) {
+    .bricks ul li {
+    height: 102px;
+    width: 23.2%;
+    }
+}

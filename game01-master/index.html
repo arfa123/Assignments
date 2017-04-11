@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css">
+    <title>Game01</title>
+    <link rel="shortcut icon" href="./mh2.png" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <center>
+        <p class="js">My First JS Game</p>
+        <h1>Guess behind the Brick!</h1>
+        
+        <h4>You can destroy maximum 5 bricks to achieve your target</h4>
+    </center>
+    <div class="container">
+        
+        <!--Target and Score Div-->
+        <div class="numbers">
+            <h3 class="left-numbers"> TARGET: 
+                <span class="random-num">0</span>
+            </h3>
+
+            <div class="right-numbers">
+                <h3> Your Score: <span class="total">0</span></h3>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+    
+
+        <!--BRICKS DIV-->
+        <div class="bricks">
+            <ul class="bricks_container">
+                <li id="0" onclick="clicked(0); this.onclick=null;"><img >  </li>
+                <li id="1" onclick="clicked(1); this.onclick=null;"><img >  </li>
+                <li id="2" onclick="clicked(2); this.onclick=null;"><img >  </li>
+                <li id="3" onclick="clicked(3); this.onclick=null;"><img >  </li>
+                <li id="4" onclick="clicked(4); this.onclick=null;"><img >  </li>
+                <li id="5" onclick="clicked(5); this.onclick=null;"><img >  </li>
+                <li id="6" onclick="clicked(6); this.onclick=null;"><img >  </li>
+                <li id="7" onclick="clicked(7); this.onclick=null;"><img >  </li>
+                <li id="8" onclick="clicked(8); this.onclick=null;"><img >  </li>
+                <li id="9" onclick="clicked(9); this.onclick=null;"><img >  </li>
+                <li id="10" onclick="clicked(10); this.onclick=null;"><img >  </li>
+                <li id="11" onclick="clicked(11); this.onclick=null;"><img >  </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+
+        <!--Remaining  and needed score Div-->
+        <div class="play">
+            <div class="left-numbers2">
+                <h3>You need: <span class="need"></span></h3>
+            </div>
+
+            <div class="right-numbers2">
+                <h3>Remaining Bricks: <span id="remain">5</span></h3>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <!--Modal Box for Win OR Loss-->
+    <center>
+        <!--LOSS-->
+        <dialog id="loss">Sorry! You Lost
+            <br><br>
+            <a href="">Play Again</a>
+        </dialog>
+
+        <!--WIN-->
+        <dialog id="win">Congratulations! You Won
+            <br>
+            <br>
+            <a href="">Play Again</a>
+        </dialog>
+    </center>
+
+    <!--Footer-->
+    <br><br>
+    <hr>
+    <footer>
+    <center>
+        <p class="footer">Developed By <a href="https://github.com/MuhammadHanzala?tab=repositories" target="_blank" id="mh">Muhammad Hanzala</a></p>
+    </center>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    background-color: #5ac74d;
+    font-family: 'arial';
+}
+.container{
+    width: 560px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+h1{
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+.numbers-container{
+    width: 100%;
+    background: #fff;
+    text-align: left;
+    
+}
+.left-numbers{
+    padding-left: 20px;
+    float: left;
+}
+
+.right-numbers{
+    padding-right: 20px;
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.bricks ul{
+    margin: 0;
+    padding: 0;
+
+}
+.bricks ul li{
+    list-style: none;
+    height: 140px;
+    width: 140px;
+    float: left;
+    padding: 0px;
+}
+.bricks ul li button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #9c8519;
+    background: #f6d11e;
+    cursor: pointer;
+}
+.bricks ul li button:active{
+    background: #9c8519;
+}

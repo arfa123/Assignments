@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Quiz App</h1>
+    </div>
+    <div class="main">
+        <div class="show" style="background: lightcyan; border: 1px solid lightcyan;">
+            <div class="start">
+                <button id="start">Start Quiz</button>
+            </div>
+        </div>
+        <div class="hide" id="quiz" style="background: lightcyan; border: 1px solid lightcyan;">
+            <h4 id="timer"></h4>
+            <hr>
+            <h3></h3>
+            <hr>
+            <input class="ans" type="radio" name="op" value="op1">a<br><br>
+            <input class="ans" type="radio" name="op" value="op2">b<br><br>
+            <input class="ans" type="radio" name="op" value="op3">c<br><br>
+            <input class="ans" type="radio" name="op" value="op4">d<br><br><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="next">
+                <button id="submit" disabled>Submit</button>
+            </div>
+        </div>
+        <div class="hide" id="result" style="background: lightcyan; border: 1px solid lightcyan;">
+            <div class="result-box">
+                <div class="result">
+                    <h4>Correct Answers<p id="final"></p></h4>
+                </div>
+                <div class="result">
+                    <h4>Score<p id="percent"></p></h4>
+                </div>
+                <div class="clear"></div><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="start">
+                    <button id="retake">Retake Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>

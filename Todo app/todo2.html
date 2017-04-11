@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="todo2.css">
+</head>
+<body>
+    <h1>Todo App</h1>
+    <div class="main">
+        <input type="text" autofocus/>
+        <button class="add">Add</button>
+    </div>
+    <div class="box">
+        <h3 id="heading"></h3>
+        <ol class="list"></ol>
+        <div class="remove">
+            <button onclick="all_remove()">Remove All</button>
+        </div>
+    </div>
+    <script>
+        function add(){
+            var val = document.getElementsByTagName("input")[0].value;
+            if (val !== ""){
+                var li = document.createElement("li");
+                li.innerHTML = (val + "<button class='rem' onclick='remove(this);'>X</button>");
+                document.getElementsByTagName("ol")[0].appendChild(li);
+            }
+            else{
+                alert("Enter something!")
+            }
+            document.getElementsByTagName("input")[0].value = "";
+        }
+        function remove(x){
+            var par = x.parentElement;
+            console.log(par);
+            par.parentElement.removeChild(par);
+        }
+        document.getElementsByClassName("add")[0].addEventListener("click",add);
+    </script>
+</body>
+</html>

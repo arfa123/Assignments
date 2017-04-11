@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+}
+.header,.signin,.main{
+    text-align: center;
+}
+.header img{
+    margin-top: 4px;
+    width: 90px;
+    height: 40px;
+}
+.header h1,h3{
+    font-family: sans-serif;
+    font-weight: normal;
+    color: #555;
+}
+.main{
+    width: 100%;
+    height: 450px;
+}
+.signin{
+    background-color: #F7F7F7;
+    height: 350px;
+    width: 35%;
+    position: relative;
+    margin: 0 auto 25px auto;
+    box-shadow: .2px .4px 2px;
+    padding: 5px;
+}
+.signin input{
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+}
+#email{
+    margin-top: 25px;
+}
+#signin{
+    background-color: #4488F6;
+    color: #ffffff;
+    border: 1px solid #4488F6;
+    font-size: 1em;
+    border-radius: 2px; 
+}
+#help,#create{
+    color: #427fed;
+    text-decoration: none;
+    cursor: pointer;
+}
+#help{
+    float: right;
+    margin-right: 10%;
+}
+#help:hover,#create:hover{
+    text-decoration: underline;
+}
+#create{
+    font-size: 1.1em;
+}
+.footer{
+    width: 100%;
+    border-top: 1px solid #000000;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
