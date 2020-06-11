@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ds190400121</title>
+	</head>
+	<body>
+		<div style="text-align: center;">
+			<h1 style="text-align: center;">Table Generator</h1>
+			<table style="display: inline-block; border: 1px solid red;">
+				<tr>
+					<th>
+						Enter Table Number
+					</th>
+					<td>
+						<input id="table_no" type="number"/>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Enter Table Length
+					</th>
+					<td>
+						<input id="table_length" type="number"/>
+					</td>
+				</tr>
+			</table>
+			<div style="margin-bottom: 10px; margin-top: 10px;">
+				<button id="submit">Generate Table</button>
+			</div>
+			<table style="display: inline-block; border: 1px solid red;">
+				<tr>
+					<th>
+						Total Even Values
+					</th>
+					<td>
+						<input id="even_values" type="number"/>
+					</td>
+				</tr>
+				<tr>
+					<th>
+						Total Odd Values
+					</th>
+					<td>
+						<input id="odd_values" type="number"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea id="result_area" cols="38" rows="20"></textarea>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script>
+			var submitBtn = document.getElementById("submit");
+			var tableNoInput = document.getElementById("table_no");
+			var tableLengthInput = document.getElementById("table_length");
+			var resultBox = document.getElementById("result_area");
+			var evenValues = document.getElementById("even_values");
+			var oddValues = document.getElementById("odd_values");
+
+			function generateTable() {
+				var tableNo = Math.floor(parseFloat(tableNoInput.value));
+				var tableLength = Math.floor(parseFloat(tableLengthInput.value));
+				if (tableNo > 1 && tableLength > 1) {
+					var arr = [];
+					var evens = 0;
+					var odds = 0;
+					for(var i = 1; i <= tableLength; i++) {
+						var str = `${tableNo} x ${i} = ${tableNo * i}`;
+						arr.push(str);
+						if (i%2 == 0) {
+							evens++;
+						} else odds++;
+					}
+					arr = arr.join("&#13;&#10;");
+					resultBox.innerHTML = arr;
+					evenValues.value = evens;
+					oddValues.value = odds;
+				} else {
+					alert("Invalid Input");
+				}
+			}
+
+			submitBtn.addEventListener("click", generateTable);
+		</script>
+	</body>
+</html>
